@@ -93,98 +93,16 @@
 <li>空间滤波</li>
 <li>频域处理</li>
 </ol>
-<h3 id="亮度变换">亮度变换</h3>
-<p>IMPORTANT:<br>图像类型转换，P18 表2.3</p>
-<ul>
-<li><p>imshow(f, [])<br>对动态范围小，既有负又有正的图像效果显著</p>
-</li>
-<li><p>g = imadjust(f, [lowin highin], [lowout highout], gamma)</p>
-</li>
-</ul>
-<p>即in - out映射(for 灰度图像 )<br>除f外 in,out参数应为[0,1]<br>gamma表征映射形状，<1为加权到更亮，>1为加权到更暗</p>
-<ul>
-<li>对比度拉伸变换：缩小动态范围</li>
-</ul>
-<p>s = 1./(1 + (m./(double(r) + eps)).^E)</p>
-<p>m为中间/阈值，指数E一般可设20 调整</p>
-<h3 id="直方图">直方图</h3>
-<ul>
-<li>h = imhist(f, b)</li>
-</ul>
-<p>b为灰度级个数<br>可用bar,plot显示h。若太密集，自定义合理跨度 eg h1 = h(1:10:256)</p>
-<ul>
-<li>直方图均衡</li>
-</ul>
-<p>变换函数是个CDF，累积积分处理，使灰度级分布更均衡化。orsay，增加图像灰度级的动态范围。自适应变换。</p>
-<p>g = histeq(f, nlev)</p>
-<p>show cdf:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-</pre></td><td class="code"><pre><span class="constant">hnorm</span> = imhist(f)./numel(f);
-<span class="constant">cdf</span> = cumsum(hnorm);
-<span class="constant">x</span> = linspace(0,1,256);
-plot(x, cdf);
-</pre></td></tr></table></figure>
 
-
-<ul>
-<li>直方图匹配</li>
-</ul>
-<p>生成具有指定直方图的图像。</p>
-<p>g = histeq(f, hspec)</p>
-<p>hspec为指定直方图</p>
-<h3 id="空间滤波">空间滤波</h3>
-<p>意义：<br>改善图像质量 - 去除高频噪声，边缘增强，线性增强，去模糊</p>
-<p>低通滤波（平滑），高通滤波（锐化），带通滤波</p>
-<ol>
-<li>线性空间滤波</li>
-</ol>
-<p>对每个像素，构造/规定mxn matrix的（邻域）掩模，再利用相关/卷积处理。</p>
-<p>g = imfilter(f, w, filtering_mode, boundary_options, size_options);</p>
-<p>common usage:<br>g = imfilter(f, w, ‘replicate’) //corr<br>g = imfilter(f, w, ‘conv’, ‘replicate’) //conv</p>
-<ol>
-<li>非线性空间滤波</li>
-</ol>
-<p>skip here</p>
-<ol>
-<li>工具箱的标准空间滤波器</li>
-</ol>
-<ul>
-<li>生成掩模</li>
-</ul>
-<p>w = fspecial(‘type’, parameters)<br>具体见P72 表3.4</p>
-<ul>
-<li>统计排序滤波器</li>
-</ul>
-<p>g = ordfilt2(f, order, domain)</p>
-<p>domain: 由0,1组成的mxn矩阵<br>用邻域一组排序元素的第order个元素来代替f中的元素，而该邻域由domain中的非0元素决定。</p>
-<p>由此，二维中值滤波器：</p>
-<p>g = medfilt2(f, [m, n], padopt)</p>
-<p>默认用3x3邻域，0填充边界</p>
-<h3 id="频域处理">频域处理</h3>
-<ul>
-<li>lowpass滤波</li>
-</ul>
-<p>%构造滤波器<br>H = fftshift(lpfilter(type, M, N, D0, n))</p>
-<pre><code><span class="pp">- M,N要超过size<span class="params">(f)</span></span>
-</code></pre><p>g = dftfilt(f, H)</p>
-<pre><code><span class="deletion">- f: 2维，灰度空间 </span>
-</code></pre><ul>
-<li>highpass滤波</li>
-</ul>
-<p>Note that：Hhp = 1 - Hlp</p>
-<ul>
-<li>高频强调滤波</li>
-</ul>
-<p>Hhfe = a + b * Hlp</p>
-<p>结合直方图均衡，完成图像增强</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2014/05/13/imageprocess_1/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/05/13/imageprocess_1/" data-id="une37bpylkywaysm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/05/13/imageprocess_1/" data-id="xxji9nlm6ieex812" class="article-share-link">Share</a>
       
       
     </footer>
@@ -222,7 +140,7 @@ plot(x, cdf);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/05/11/start/" data-id="k0pucv8cpykpvwez" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/05/11/start/" data-id="cd1gzxv8t5c7i9c8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -259,7 +177,7 @@ plot(x, cdf);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/05/11/hello-world/" data-id="dnqrlcsxwykhjww2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/05/11/hello-world/" data-id="sq9d57qy951avf93" class="article-share-link">Share</a>
       
       
     </footer>
