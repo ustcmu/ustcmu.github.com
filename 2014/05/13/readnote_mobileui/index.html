@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | Hexo</title>
+  <title>移动应用的设计与开发 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta content="website" property="og:type">
-<meta content="Hexo" property="og:title">
-<meta content="http://yoursite.com/archives/" property="og:url">
+  <meta content="article" property="og:type">
+<meta content="移动应用的设计与开发" property="og:title">
+<meta content="http://yoursite.com/2014/05/13/readnote_mobileui/" property="og:url">
 <meta property="og:image">
 <meta content="Hexo" property="og:site_name">
-<meta property="og:description">
+<meta content="记得是在去北京的车上读完这本书的，从出版时间上看或许稍稍过时。但阐述的移动应用设计的基本原则并不过时，全面，抽象，也涵盖一定量的设计模式，方法论以及例子，但这些并不是主体。回想起来，文字间每时每刻都透露出的那种用户第一体验至上的感觉有点打动人。用问题健壮想法，那是创新设计课刚开始的时候，andrew在他邮件里分享给我们的，那时最开始的头脑风暴，大家也不免互相质疑并且对方很可能没办法为新鲜的想法打消" property="og:description">
 <meta content="summary" name="twitter:card">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -57,61 +57,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-howtoreadabook" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/05/13/howtoreadabook/" class="article-date">
-  <time datetime="2014-05-13T13:34:20.000Z" itemprop="datePublished">May 13 2014</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Reading Notes/">Reading Notes</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/05/13/howtoreadabook/">How to read a book</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>大二上新东方的时候，记不清是老杜还是虎平推荐的。草草翻了一下，觉得读书本是消遣，何必拿条条框框束缚。</p>
-<p>一年后，发觉当大脑消化掉一些简洁有效的方法，再用来读书，收获 则是不一样的。故翻开旧爱，再理解一番。</p>
-<h2 id="阅读层次">阅读层次</h2>
-<ul>
-<li>为了获取资讯阅读 vs. 增进理解而阅读</li>
-<li>四个阅读层次：基础，检视，分析，主题</li>
-</ul>
-
-        
-          <p class="article-more-link">
-            <a href="/2014/05/13/howtoreadabook/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/05/13/howtoreadabook/" data-id="l6pwkqojd0ncugxn" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-readnote_mobileui" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-readnote_mobileui" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/05/13/readnote_mobileui/" class="article-date">
   <time datetime="2014-05-13T13:15:00.000Z" itemprop="datePublished">May 13 2014</time>
@@ -128,8 +74,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/05/13/readnote_mobileui/">移动应用的设计与开发</a>
+    <h1 class="article-title" itemprop="name">
+      移动应用的设计与开发
     </h1>
   
 
@@ -147,12 +93,84 @@
 <li>mobile web app VS native app</li>
 <li>Some valuable questions about USER TEST</li>
 </ul>
+<a id="more"></a>
 
-        
-          <p class="article-more-link">
-            <a href="/2014/05/13/readnote_mobileui/#more">Read More</a>
-          </p>
-        
+<h2 id="Part1_应用环境">Part1 应用环境</h2>
+<h4 id="1-_背景环境">1. 背景环境</h4>
+<p>Defination: 帮助用户更好地理解周围环境，共鸣。<br>eg：“这条信息为我提供了背景环境，使我更好地理解这一刻对我有什么意义”<br>    “站在柏林墙的遗迹前阅读手机上关于它的历史”</p>
+<h4 id="2-_归属环境">2. 归属环境</h4>
+<p>a. 所处位置，物理环境<br>b. 访问时所用的设备，媒体环境<br>c. 当前的思维状态，情态环境</p>
+<h2 id="Part2_用问题健壮想法">Part2 用问题健壮想法</h2>
+<h4 id="在用户可能遇到的各种应用环境中去审视应用程序：">在用户可能遇到的各种应用环境中去审视应用程序：</h4>
+<ul>
+<li>用户是谁？能假设or预测他们有怎样的行为？</li>
+<li>发生了什么？用户在什么环境下最能理解你想展现的内容？</li>
+<li>用户何时交互？在家赋闲or工作忙里偷闲or等车无聊 etc</li>
+<li>用户身在何处？公共场所or个人空间，室内or室外，白天or晚上</li>
+<li>用户为何使用你的应用程序？以用户的当前状况，他可以得到什么价值？</li>
+<li><p>用户怎样使用移动设备？拿在手中or放在口袋中，姿势静止or多变</p>
+</li>
+<li><p>Some regulations</p>
+</li>
+</ul>
+<p>先定义用户环境，找出用户目标。Then，尝试理解用户的应用环境是如何改变其目标的。</p>
+<h2 id="Part3_信息架构">Part3 信息架构</h2>
+<ul>
+<li>精简内容来强化路径</li>
+<li>点击流 P99</li>
+<li>线框模型 P102</li>
+<li>制作原型<ul>
+<li>纸质原型</li>
+<li>应用环境原型</li>
+<li>real interact UI</li>
+</ul>
+</li>
+</ul>
+<h2 id="Part4_视觉设计">Part4 视觉设计</h2>
+<ul>
+<li>主旨</li>
+<li>观感</li>
+<li>布局：在观感之前，从信息架构中找到问题答案</li>
+<li>颜色：P127<ul>
+<li>调色板：<ul>
+<li>顺序：三色。第一种选品牌颜色，第二第三为一的补色</li>
+<li>最优化：从一张图片中提取常见色</li>
+<li>灵感</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>字体：<ul>
+<li>高对比度</li>
+<li>sans-serif无尘先 用于导航or紧凑区域； serif衬线 显示长篇文字</li>
+<li>左右留空白 3,4个字符</li>
+<li>用文本标题分割内容</li>
+<li>缩短段落长度，2-3句子per段</li>
+</ul>
+</li>
+</ul>
+<h2 id="Part5_mobile_web_app_VS_native_app">Part5 mobile web app VS native app</h2>
+<h4 id="When_to_create_native_app">When to create native app</h4>
+<ul>
+<li>收费</li>
+<li>游戏</li>
+<li>使用特定位置</li>
+<li>摄像头</li>
+<li>加速度计</li>
+<li>访问文件系统</li>
+<li>离线用户</li>
+</ul>
+<h2 id="Part6_Some_valuable_questions_about_USER_TEST">Part6 Some valuable questions about USER TEST</h2>
+<p>应用环境测试 P286</p>
+<ul>
+<li>能否迅速加载</li>
+<li>设备物理特性能否照计划使用？旋转，按键，切视图 etc</li>
+<li>应用能否正确中断when calling</li>
+<li>设备中断时会发生什么？用户能否恢复会话</li>
+<li>如果处于离线模式，是否会提示错误？</li>
+<li>如果大量使用数据，且高速移动（在不同移动发射塔切换），应用能否正常工作？</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
@@ -162,103 +180,29 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-imageprocess_1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/05/13/imageprocess_1/" class="article-date">
-  <time datetime="2014-05-13T08:14:18.000Z" itemprop="datePublished">May 13 2014</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/ImageProcessing/">ImageProcessing</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2014/05/13/howtoreadabook/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          How to read a book
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/05/13/imageprocess_1/">图像处理基础学习篇（一）</a>
-    </h1>
   
+    <a href="/2014/05/13/imageprocess_1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">图像处理基础学习篇（一）</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>医学成像&amp;图像处理课上，老师给了一周完成大作业。无奈总共这课就上了三四次，老师讲的还无比凌乱，只好借了本书，自己啃啃，刷完基础再构建想法搞大作业。</p>
-<p>  On the way! ^_^</p>
-<h2 id="Content">Content</h2>
-<ol>
-<li>亮度变换</li>
-<li>直方图</li>
-<li>空间滤波</li>
-<li>频域处理</li>
-</ol>
-
-        
-          <p class="article-more-link">
-            <a href="/2014/05/13/imageprocess_1/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/05/13/imageprocess_1/" data-id="t6i7kuzu8sybmfpv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
 
-
-  
-    <article id="post-start" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/05/11/start/" class="article-date">
-  <time datetime="2014-05-11T09:52:06.000Z" itemprop="datePublished">May 11 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/05/11/start/">start</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hi!</p>
-<p>  This is new start, I use hexo to create my first blog.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/05/11/start/" data-id="4887l7bcx40ny236" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
 </section>
         
           <aside id="sidebar">
