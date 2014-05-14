@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>百度旅游app简析 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta content="article" property="og:type">
+<meta content="百度旅游app简析" property="og:title">
+<meta content="http://yoursite.com/2014/05/14/existapp_baidulvyou/" property="og:url">
+<meta content="http://img.hb.aicdn.com/99a8e86ebce36bcb52c9544763f3f6780d2fe3ac65213-krorJJ_fw658" property="og:image">
+<meta content="Hexo" property="og:site_name">
+<meta content="Overview
+最近对旅游类app较感兴趣，毕竟旅游这个主题是和移动天生契合的。大致扫完现有app，比较关注三个细分方向：出行推荐，个人旅游日志，图片社交。其实还有很多其他细分，最重要之一是旅游信息的提供，但我想信息源的数量和质量，恐怕百度等大公司已做得足够好。
+Btw，其实大多app都是综合性闭环（即推荐，攻略，住宿，图片or简单游记等，集多功能于一体），只不过会强调突出其中的一两项功能。也不" property="og:description">
+<meta content="summary" name="twitter:card">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-existapp_baidulvyou" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/05/14/existapp_baidulvyou/" class="article-date">
+  <time datetime="2014-05-14T09:31:24.000Z" itemprop="datePublished">May 14 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/design/">design</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      百度旅游app简析
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Overview">Overview</h2>
+<p>最近对旅游类app较感兴趣，毕竟旅游这个主题是和移动天生契合的。大致扫完现有app，比较关注三个细分方向：出行推荐，个人旅游日志，图片社交。其实还有很多其他细分，最重要之一是旅游信息的提供，但我想信息源的数量和质量，恐怕百度等大公司已做得足够好。</p>
+<p>Btw，其实大多app都是综合性闭环（即推荐，攻略，住宿，图片or简单游记等，集多功能于一体），只不过会强调突出其中的一两项功能。也不排除有很多精美的单一功能向app，比如禅游记。</p>
+<p>第一个旅游app简析，选择了百度旅游。</p>
+<a id="more"></a>
+
+<h2 id="百度旅游">百度旅游</h2>
+<p><img src="http://img.hb.aicdn.com/99a8e86ebce36bcb52c9544763f3f6780d2fe3ac65213-krorJJ_fw658" alt="1"></p>
+<p>首页视觉效果超赞，渐变背景色+透明layout+嵌入本地美景图，顶部两个button也非常干净。不过广告是败笔，整个UI档次瞬间下滑一档。</p>
+<p>主浅蓝到绿的渐变，奠定主线，明亮，适当轻快，给人以放松的感受。</p>
+<h2 id="功能元素：">功能元素：</h2>
+<p>第一层级：本地旅游 + 推荐目的地 + 灵感（Just like “I’m feeling lucky”） + 我的旅行</p>
+<p>细分层级：</p>
+<h4 id="1-_本地旅游">1. 本地旅游</h4>
+<ul>
+<li>游玩指南</li>
+</ul>
+<p><img src="http://img.hb.aicdn.com/518722bf27c4c57115a064db9761c2dd7c48df9c25fe2-zOirtX_fw658" alt="2"></p>
+<p>综合性指南：覆盖推荐功能以及出行入住的信息。<br>特色景点推荐 + 特色餐厅推荐 + 门票优惠 + 酒店预订 + 周边游。</p>
+<p>依然是较淡的背景色调，用metro块做分类，其中嵌入圆形图标，加强对比度显示。顶部button和底部tab/Actionbar，采用蓝色与白色衬底与首页呼应。</p>
+<ul>
+<li>现场直播</li>
+</ul>
+<p><img src="http://img.hb.aicdn.com/0f9e1861b1a44e27741cdd0a6bb5b4e5c2725d033735c-qcAglq_fw658" alt="3"></p>
+<p>同地驴友分享图片，以时间/直播作为互动元素。</p>
+<p>小瀑布式展示 感觉尚好，但是驴友的分享内容是否存有很好的吸引力，存疑。</p>
+<ul>
+<li>我的附近</li>
+</ul>
+<p><img src="http://img.hb.aicdn.com/e215cfe93f1703931dc18bf2a310b002f411675235cee-9pfeta_fw658" alt="4"></p>
+<p>根据当前地理位置推荐景点 餐馆 酒店 娱乐信息</p>
+<ul>
+<li>我的行程</li>
+</ul>
+<p><img src="http://img.hb.aicdn.com/5e79a3666f75646ad72100801710e56e993404add711-GdfYnn_fw658" alt="5"></p>
+<h4 id="2-_推荐目的地">2. 推荐目的地</h4>
+<p><img src="http://img.hb.aicdn.com/170ed9ab143b7bc50fa4908d05201e0d1f6e55739b325-4CKkMO_fw658" alt="6"></p>
+<p>进行关系分类，然后对不同类别进行景点推荐，简单有效。</p>
+<p>所分类为：情侣 自驾 美食 境外热门 单身 四月深呼吸</p>
+<p>注意：分类的最后一类是根据当前月份进行的推荐。</p>
+<h4 id="3-_灵感/I’m_feeling_lucky">3. 灵感/I’m feeling lucky</h4>
+<p>触感很像google的手气不错，表现形式和人人的新鲜事很像。半瀑布流展示所有细分，如热门精选（地点推荐），新鲜事（活动推荐），明信片（图片分享），这个层级把握很好，不会让我觉得是杂烩，即使找不到自己想要的信息源，也可以带给我欣赏的快乐。</p>
+<p><img src="http://img.hb.aicdn.com/f93ca72d3f895ec2b57c57afbff2599804da1bff7dd23-dShEc6_fw658" alt="7"><br><img src="http://img.hb.aicdn.com/1a0239f9be8f33585105baf2ec2b3dd5065f5f6f16aeb-n19Duk_fw658" alt="8"><br><img src="http://img.hb.aicdn.com/24b6448c961a4e97ca3e6be3caead0c294e190c3be929-Bb38Aa_fw658" alt="9"></p>
+<h3 id="总体感受">总体感受</h3>
+<ul>
+<li>一站式多功能，重点在提供‘玩在当地’的旅游信息（比如活动，住宿，特色景点/餐厅），信息源丰富，功能多而强。  </li>
+<li>轻推荐，轻游记，轻图片社交。做得简单明了。</li>
+<li>灵感/I’m feeling lucky 是个小小的体验高潮点</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/05/14/existapp_baidulvyou/" data-id="h02xpbycln79gcis" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2014/05/13/wayfarer_uiv1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Wayfarer UI version 1.0</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Design/">Design</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ImageProcessing/">ImageProcessing</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Reading Notes/">Reading Notes</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/design/">design</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05">May 2014</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/05/14/existapp_baidulvyou/">百度旅游app简析</a>
+          </li>
+        
+          <li>
+            <a href="/2014/05/13/wayfarer_uiv1/">Wayfarer UI version 1.0</a>
+          </li>
+        
+          <li>
+            <a href="/2014/05/13/howtoreadabook/">How to read a book</a>
+          </li>
+        
+          <li>
+            <a href="/2014/05/13/readnote_mobileui/">移动应用的设计与开发</a>
+          </li>
+        
+          <li>
+            <a href="/2014/05/13/imageprocess_1/">图像处理基础学习篇（一）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2014 John Doe<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript" src="/js/script.js"></script>
+  </div>
+</body>
+</html>
